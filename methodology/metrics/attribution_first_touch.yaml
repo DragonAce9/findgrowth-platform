@@ -1,0 +1,13 @@
+name: attribution_first_touch
+description: Люди, заказы и выручка по первому каналу до покупки
+owner: platform
+domain: attribution
+status: live
+grain: entity
+measure:
+  op: count
+dimensions:
+  - first_touch_channel
+filters:
+  - attribution_after_purchase = false
+window: null

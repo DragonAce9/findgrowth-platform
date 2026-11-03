@@ -1,0 +1,21 @@
+name: identity_coverage
+description: Доля выручки заказов, попавших в граф идентичности
+owner: platform
+domain: identity
+status: live
+grain: order
+measure:
+  op: ratio
+  numerator:
+    op: filter
+    where: orphan
+    value: false
+    inner:
+      op: sum
+      field: revenue
+  denominator:
+    op: sum
+    field: revenue
+dimensions: []
+filters: []
+window: null

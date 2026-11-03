@@ -1,0 +1,14 @@
+name: experiment_exposures
+description: Показы по варианту и holdout. Вердикт теста считает сервис, не эта мера
+owner: platform
+domain: experiments
+status: live
+grain: exposure
+measure:
+  op: count
+dimensions:
+  - experiment_id
+  - variant
+  - in_holdout
+filters: []
+window: null

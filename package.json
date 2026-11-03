@@ -1,0 +1,24 @@
+{
+  "name": "findgrowth-platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "tsx --test src/engine/*.test.ts src/app/*.test.ts src/app/*.test.tsx",
+    "export-web": "tsx --tsconfig scripts/tsconfig.json scripts/export-web.ts"
+  },
+  "dependencies": {
+    "next": "^15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "yaml": "^2.7.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

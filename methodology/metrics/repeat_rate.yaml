@@ -1,0 +1,24 @@
+name: repeat_rate
+description: Доля второй покупки в окне среди зрелых покупателей, без продлений
+owner: platform
+domain: loyalty
+status: live
+grain: entity
+measure:
+  op: window
+  days: 120
+  inner:
+    op: ratio
+    numerator:
+      op: filter
+      where: repeated
+      value: true
+      inner:
+        op: count
+    denominator:
+      op: count
+dimensions: []
+filters:
+  - converted = true
+  - renewal excluded
+window: 120

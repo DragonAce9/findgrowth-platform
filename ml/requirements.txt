@@ -1,0 +1,5 @@
+numpy==2.2.4
+scikit-learn==1.6.1
+lightgbm==4.6.0
+lifelines==0.30.0
+pytest==8.3.5

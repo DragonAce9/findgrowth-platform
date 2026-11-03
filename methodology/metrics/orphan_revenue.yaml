@@ -1,0 +1,16 @@
+name: orphan_revenue
+description: Выручка заказов без сущности на шине визитов
+owner: platform
+domain: identity
+status: live
+grain: order
+measure:
+  op: filter
+  where: orphan
+  value: true
+  inner:
+    op: sum
+    field: revenue
+dimensions: []
+filters: []
+window: null

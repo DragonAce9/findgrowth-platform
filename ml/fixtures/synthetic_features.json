@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {"id": "a01", "t1": "2024-01-01", "repeat": 0, "orders": 1, "revenue": 20, "visits": 1, "recency": 40},
+    {"id": "a02", "t1": "2024-01-08", "repeat": 1, "orders": 3, "revenue": 90, "visits": 6, "recency": 8},
+    {"id": "a03", "t1": "2024-01-15", "repeat": 0, "orders": 1, "revenue": 25, "visits": 2, "recency": 30},
+    {"id": "a04", "t1": "2024-01-22", "repeat": 1, "orders": 2, "revenue": 70, "visits": 5, "recency": 12},
+    {"id": "a05", "t1": "2024-02-01", "repeat": 0, "orders": 1, "revenue": 15, "visits": 1, "recency": 50},
+    {"id": "a06", "t1": "2024-02-08", "repeat": 1, "orders": 4, "revenue": 120, "visits": 8, "recency": 5},
+    {"id": "a07", "t1": "2024-02-15", "repeat": 0, "orders": 1, "revenue": 30, "visits": 2, "recency": 28},
+    {"id": "a08", "t1": "2024-02-22", "repeat": 1, "orders": 2, "revenue": 60, "visits": 4, "recency": 14},
+    {"id": "a09", "t1": "2024-03-01", "repeat": 0, "orders": 1, "revenue": 18, "visits": 1, "recency": 45},
+    {"id": "a10", "t1": "2024-03-08", "repeat": 1, "orders": 3, "revenue": 80, "visits": 7, "recency": 9},
+    {"id": "a11", "t1": "2024-03-15", "repeat": 0, "orders": 1, "revenue": 22, "visits": 2, "recency": 33},
+    {"id": "a12", "t1": "2024-03-22", "repeat": 1, "orders": 2, "revenue": 55, "visits": 4, "recency": 11},
+    {"id": "a13", "t1": "2024-04-01", "repeat": 0, "orders": 1, "revenue": 28, "visits": 1, "recency": 36},
+    {"id": "a14", "t1": "2024-04-08", "repeat": 1, "orders": 3, "revenue": 100, "visits": 6, "recency": 7},
+    {"id": "a15", "t1": "2024-04-15", "repeat": 0, "orders": 1, "revenue": 16, "visits": 2, "recency": 42},
+    {"id": "a16", "t1": "2024-04-22", "repeat": 1, "orders": 2, "revenue": 64, "visits": 5, "recency": 10},
+    {"id": "b01", "t1": "2024-06-01", "repeat": 0, "orders": 1, "revenue": 21, "visits": 1, "recency": 38},
+    {"id": "b02", "t1": "2024-06-08", "repeat": 1, "orders": 3, "revenue": 88, "visits": 6, "recency": 6},
+    {"id": "b03", "t1": "2024-06-15", "repeat": 0, "orders": 1, "revenue": 19, "visits": 2, "recency": 41},
+    {"id": "b04", "t1": "2024-06-22", "repeat": 1, "orders": 2, "revenue": 72, "visits": 5, "recency": 13},
+    {"id": "b05", "t1": "2024-07-01", "repeat": 0, "orders": 1, "revenue": 24, "visits": 1, "recency": 29},
+    {"id": "b06", "t1": "2024-07-08", "repeat": 1, "orders": 4, "revenue": 110, "visits": 7, "recency": 4},
+    {"id": "b07", "t1": "2024-07-15", "repeat": 0, "orders": 1, "revenue": 17, "visits": 2, "recency": 47},
+    {"id": "b08", "t1": "2024-07-22", "repeat": 1, "orders": 2, "revenue": 58, "visits": 4, "recency": 15}
+  ]
+}

@@ -1,0 +1,35 @@
+# ADR-1 — ML service.
+# Training and scoring run in a separate Python process.
+# The Next app stays on node:sqlite and does not import Python.
+# The service is off unless the compose profile is started.
+# Scores are an artifact, not a number on the product screen until holdout measures them.
+#
+# Optional. The Next app, `npm test`, and `npx tsc --noEmit` do not start these services.
+# Redis, Postgres, and the Python trainer stay off unless a profile is selected by hand.
+# No queue, object store, or OpenTelemetry collector is running from this file.
+services:
+  redis:
+    image: redis:7
+    profiles: ["optional"]
+  postgres:
+    image: postgres:16
+    profiles: ["optional"]
+    environment:
+      POSTGRES_PASSWORD: optional
+  ml:
+    image: python:3.12-slim
+    profiles: ["optional"]
+    working_dir: /app/ml
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ./ml:/app/ml
+    command: ["python", "-m", "findgrowth_ml", "--health"]
+    stop_grace_period: 1s
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health', timeout=2)"]
+      interval: 2s
+      timeout: 5s
+      retries: 15
+      start_period: 2s

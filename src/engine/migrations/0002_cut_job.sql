@@ -1,0 +1,2 @@
+ALTER TABLE cuts ADD COLUMN job_status TEXT NOT NULL DEFAULT 'done';
+ALTER TABLE cuts ADD COLUMN job_error TEXT;

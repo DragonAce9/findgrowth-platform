@@ -1,0 +1,12 @@
+name: site_funnel
+description: Воронка людей, стадии монотонные
+owner: platform
+domain: site_conversion
+status: live
+grain: entity
+measure:
+  op: count
+dimensions:
+  - stage
+filters: []
+window: null
